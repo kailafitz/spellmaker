@@ -12,6 +12,7 @@ import NavMenu from "@/components/custom/navMenu";
 import Footer from "@/components/custom/footer";
 import HomeBg from "@/components/custom/homeBg";
 import GradientCanvasClient from "@/components/custom/gradientCanvasClient";
+import MagicCursor from "@/components/custom/magicCursor";
 
 const body = Gabarito({
     variable: "--font-body",
@@ -58,6 +59,7 @@ export default function RootLayout({
             >
                 <GradientCanvasClient />
                 <HomeBg />
+                <MagicCursor />
                 <NavMenu />
                 <main className="flex flex-1 flex-col">{children}</main>
                 <Footer />
