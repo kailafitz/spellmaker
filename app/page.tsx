@@ -11,8 +11,8 @@ export default function Home() {
             <div className="flex flex-1 flex-col justify-center">
                 <TitleText />
                 <Container className="flex flex-row gap-12 justify-center">
-                    <Button label="About Us" />
-                    <Button label="Productions" />
+                    <Button label="About Us" href="/about" />
+                    <Button label="Productions" href="/productions" />
                 </Container>
             </div>
             {/* <PulsingGradient homePage /> */}
