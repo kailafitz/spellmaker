@@ -53,7 +53,7 @@ const GetInTouch = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-y-5">
+                <div className="flex flex-col gap-y-7">
                     <Input placeholder="Your Name" />
                     <Input placeholder="Your Email" />
                     <Textarea
@@ -63,7 +63,7 @@ const GetInTouch = () => {
                         className="min-h-48"
                     />
                     <div>
-                        <Button label="Dispatch Spell" className="" href="" />
+                        <Button label="Dispatch Message" className="" href="" />
                     </div>
                 </div>
             </div>
