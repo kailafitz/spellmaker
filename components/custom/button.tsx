@@ -1,12 +1,21 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {
     label: string;
+    href: string;
     className?: string;
 };
 
 const Button = (props: Props) => {
-    return <button className="border-violet-700 border-2 rounded-e-full px-7 py-2 text-white min-w-44 hover:cursor-pointer bg-violet-700/30 backdrop-blur-lg">{props.label}</button>;
+    return (
+        <Link
+            className="border-transparent border-2 transition-all rounded-full px-7 py-2 text-white min-w-44 hover:cursor-pointer bg-white/20 backdrop-blur-lg hover:border-white/65 hover:transition-all"
+            href={props.href}
+        >
+            {props.label}
+        </Link>
+    );
 };
 
 export default Button;
