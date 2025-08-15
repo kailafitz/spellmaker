@@ -19,11 +19,11 @@ const body = Gabarito({
     weight: ["400"],
 });
 
-const subheading = Libre_Baskerville({
-    variable: "--font-subheading",
-    subsets: ["latin"],
-    weight: ["400"],
-});
+// const subheading = Libre_Baskerville({
+//     variable: "--font-subheading",
+//     subsets: ["latin"],
+//     weight: ["400"],
+// });
 
 // const body = Gabarito({
 //   variable: "--font-body",
@@ -61,9 +61,6 @@ export default function RootLayout({
                 <NavMenu />
                 <main className="flex flex-1 flex-col">{children}</main>
                 <Footer />
-
-                {/* <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
-                <script type="module" src="/gradient.ts"></script> */}
             </body>
         </html>
     );

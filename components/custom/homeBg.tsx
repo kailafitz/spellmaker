@@ -13,7 +13,7 @@ const HomeBg = () => {
                 ease={20}
                 color={"#000"}
             /> */}
-            <PartilceTest />
+            {/* <PartilceTest /> */}
             {/* <GradientCanvas /> */}
         </>
     );

@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Container from "./container";
 import { ShineBorder } from "@/components/magicui/shine-border";
+import Link from "next/link";
 
 const NavMenu = () => {
     return (
@@ -23,18 +24,18 @@ const NavMenu = () => {
                         borderWidth={1}
                     /> */}
                     <NavigationMenuItem>
-                        <NavigationMenuLink href="/about-us">
-                            About Us
+                        <NavigationMenuLink asChild>
+                            <Link href="/about-us">About Us</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink href="/productions">
-                            Productions
+                        <NavigationMenuLink asChild>
+                            <Link href="/productions">Productions</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink href="/get-in-touch">
-                            Get in Touch
+                        <NavigationMenuLink asChild>
+                            <Link href="/get-in-touch">Get in Touch</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                 </NavigationMenuList>
