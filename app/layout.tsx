@@ -62,9 +62,9 @@ export default function RootLayout({
             <body
                 className={`${heading.variable} ${body.variable} antialiased flex flex-col justify-between flex-1 relative overflow-hidden`}
             >
-                {/* <GradientCanvasClient />
+                <GradientCanvasClient />
                 <HomeBg />
-                <MagicCursor /> */}
+                <MagicCursor />
                 <PageTransition>
                     <NavMenu />
                     <main className="flex flex-1 flex-col">{children}</main>
