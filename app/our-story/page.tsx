@@ -12,7 +12,7 @@ const AboutUs: React.FC = () => {
             >
                 <div>
                     <h1 className="text-large uppercase font-medium mb-4 tracking-wide">
-                        About Us
+                        Our Story
                     </h1>
                     <h2 className="text-5xl font-medium">
                         Fueled by coffee, chaos, and an obsession with the
@@ -47,7 +47,7 @@ const AboutUs: React.FC = () => {
                             spellbinding together.
                         </p>
                         <div>
-                            <Button label="Get in Touch" href="/get-in-touch" />
+                            <Button label="Summon Us" href="/summon-us" />
                         </div>
                     </div>
                 </div>

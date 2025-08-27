@@ -58,6 +58,22 @@
             background-position: 0% 0%;
         }
     }
+
+    --animate-shiny-text: shiny-text 8s infinite;
+
+    @keyframes shiny-text {
+
+        0%,
+        90%,
+        100% {
+            background-position: calc(-100% - var(--shiny-width)) 0;
+        }
+
+        30%,
+        60% {
+            background-position: calc(100% + var(--shiny-width)) 0;
+        }
+    }
 }
 
 :root {
@@ -159,15 +175,43 @@
     z-index: -2;
 }
 
-.magic-cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
+body {
+    cursor: url("/glowing-orb copy.svg") 16 16, auto;
+}
+
+.bubble-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 6px var(--color-indigo-950), 0 0 12px var(--color-green-400);
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, var(--color-green-400) 0%, var(--color-green-400) 80%);
     border-radius: 50%;
-    background: radial-gradient(circle, #ff79c6, #bd93f9);
     pointer-events: none;
-    /* cursor won't block clicks */
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease, width 0.15s ease, height 0.15s ease;
-    z-index: 9999;
+    opacity: 0.8;
+    animation: rise 1s ease-out forwards;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateX(-10px) translateY(-20px) scale(1.2);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateX(10px) translateY(-40px) scale(0.8);
+        opacity: 0;
+    }
 }

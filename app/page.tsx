@@ -8,8 +8,8 @@ export default function Home() {
             <div className="flex flex-1 flex-col justify-center">
                 <TitleText />
                 <Container className="flex flex-row gap-12 justify-center">
-                    <Button label="About Us" href="/about" />
-                    <Button label="Productions" href="/productions" />
+                    <Button label="Our Story" href="/our-story" />
+                    <Button label="Our Creations" href="/our-creations" />
                 </Container>
             </div>
             {/* <PulsingGradient homePage /> */}

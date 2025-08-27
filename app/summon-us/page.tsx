@@ -46,9 +46,9 @@ const GetInTouch = () => {
                             Follow us on social media
                         </p>
                         <div className="fill-white flex flex-row gap-x-5">
-                            <Instagram className="w-8 h-auto fill-inherit" />
-                            <Facebook className="w-8 h-auto fill-inherit" />
-                            <X className="w-8 h-auto fill-inherit" />
+                            <Instagram className="w-8" />
+                            <Facebook className="w-8" />
+                            <X className="w-8" />
                         </div>
                     </div>
                 </div>

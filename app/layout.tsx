@@ -13,6 +13,8 @@ import Footer from "@/components/custom/footer";
 import HomeBg from "@/components/custom/homeBg";
 import GradientCanvasClient from "@/components/custom/gradientCanvasClient";
 import MagicCursor from "@/components/custom/magicCursor";
+import PageTransition from "@/components/custom/pageTransition";
+import { MagicalShadcnDrawer } from "@/components/custom/customDrawer";
 
 const body = Gabarito({
     variable: "--font-body",
@@ -53,16 +55,22 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="flex flex-col min-h-screen">
+        <html
+            lang="en"
+            className="flex flex-col min-h-screen overflow-y-scroll"
+        >
             <body
                 className={`${heading.variable} ${body.variable} antialiased flex flex-col justify-between flex-1 relative overflow-hidden`}
             >
-                <GradientCanvasClient />
+                {/* <GradientCanvasClient />
                 <HomeBg />
-                <MagicCursor />
-                <NavMenu />
-                <main className="flex flex-1 flex-col">{children}</main>
+                <MagicCursor /> */}
+                <PageTransition>
+                    <NavMenu />
+                    <main className="flex flex-1 flex-col">{children}</main>
+                </PageTransition>
                 <Footer />
+                {/* <MagicalShadcnDrawer /> */}
             </body>
         </html>
     );
