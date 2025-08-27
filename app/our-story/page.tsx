@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@/components/custom/button";
+import { LinkButton } from "@/components/custom/button";
 import Container from "@/components/custom/container";
 import PulsingGradient from "@/components/custom/pulsingGradient";
 
@@ -47,7 +47,7 @@ const AboutUs: React.FC = () => {
                             spellbinding together.
                         </p>
                         <div>
-                            <Button label="Summon Us" href="/summon-us" />
+                            <LinkButton label="Summon Us" href="/summon-us" />
                         </div>
                     </div>
                 </div>

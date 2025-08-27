@@ -11,7 +11,6 @@ import {
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Container from "./container";
-import { ShineBorder } from "@/components/magicui/shine-border";
 import Link from "next/link";
 
 const links = [
@@ -31,8 +30,8 @@ const NavMenu = () => {
             // Random color: purple or green
             bubble.style.background =
                 Math.random() > 0.5
-                    ? "radial-gradient(circle, #9d4edd 0%, #d6b4ff 80%)"
-                    : "radial-gradient(circle, #00f5d4 0%, #2ec4b6 80%)";
+                    ? "radial-gradient(circle, green 0%, purple 80%)"
+                    : "radial-gradient(circle, purple 0%, green 80%)";
             bubble.style.animationDelay = `${i * 0.1}s`;
             link.appendChild(bubble);
 

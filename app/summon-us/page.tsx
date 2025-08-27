@@ -6,7 +6,7 @@ import Facebook from "@/components/icons/Facebook";
 import X from "@/components/icons/X";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Button from "@/components/custom/button";
+import { Button } from "@/components/custom/button";
 
 const GetInTouch = () => {
     return (
@@ -63,7 +63,10 @@ const GetInTouch = () => {
                         className="min-h-48"
                     />
                     <div>
-                        <Button label="Dispatch Message" className="" href="" />
+                        <Button
+                            label="Dispatch Message"
+                            href="/"
+                        />
                     </div>
                 </div>
             </div>

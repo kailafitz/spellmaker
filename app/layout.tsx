@@ -65,8 +65,8 @@ export default function RootLayout({
                 <GradientCanvasClient />
                 <HomeBg />
                 <MagicCursor />
+                <NavMenu />
                 <PageTransition>
-                    <NavMenu />
                     <main className="flex flex-1 flex-col">{children}</main>
                 </PageTransition>
                 <Footer />

@@ -183,7 +183,13 @@ body {
     position: relative;
     color: white;
     text-decoration: none;
-    text-shadow: 0 0 6px var(--color-indigo-950), 0 0 12px var(--color-green-400);
+    transition: all 0.3s ease;
+    text-shadow: unset;
+}
+
+.bubble-link:hover {
+    text-shadow: 0 0 6px green, 0 0 12px yellow;
+    transition: all 0.3s ease;
 }
 
 .bubble {
@@ -192,7 +198,8 @@ body {
     left: 50%;
     width: 6px;
     height: 6px;
-    background: radial-gradient(circle, var(--color-green-400) 0%, var(--color-green-400) 80%);
+    background: radial-gradient(circle, red 0%, blue 80%);
+    /* background: radial-gradient(circle, var(--color-green-400) 0%, var(--color-green-400) 80%); */
     border-radius: 50%;
     pointer-events: none;
     opacity: 0.8;
