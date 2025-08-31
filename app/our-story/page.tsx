@@ -1,7 +1,6 @@
 import React from "react";
 import { LinkButton } from "@/components/custom/button";
 import Container from "@/components/custom/container";
-import PulsingGradient from "@/components/custom/pulsingGradient";
 
 const AboutUs: React.FC = () => {
     return (

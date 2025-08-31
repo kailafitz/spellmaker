@@ -1,8 +1,8 @@
 import React from "react";
 
 const PulsingGradient = (props: {
-  homePage?: Boolean;
-  aboutPage?: Boolean;
+  homePage?: boolean;
+  aboutPage?: boolean;
 }) => {
   return (
     <div

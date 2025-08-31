@@ -122,7 +122,7 @@ export default function FloatingDrawer() {
                                 <div className="text-left">
                                     {/* <h3 className="uppercase text-3xl">Spellmaker</h3> */}
                                     <p className="uppercase opacity-35">
-                                        Let's make movie magic
+                                        Let&#39;s make movie magic
                                     </p>
                                     <a href="mailto:info@spellmaker.ie">
                                         info@spellmaker.ie

@@ -1,8 +1,6 @@
 import GradientCanvasClient from "@/components/custom/gradientCanvasClient";
 import React from "react";
 
-type Props = {};
-
 export default function ClientLayout({
     children,
 }: {
