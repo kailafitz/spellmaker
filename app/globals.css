@@ -151,5 +151,58 @@
 }
 
 #tsparticles {
+<<<<<<< Updated upstream
   z-index: -2;
+=======
+    z-index: -2;
+}
+
+/* wand /staff */
+body {
+    cursor: url("/glowing-orb copy.svg") 16 16, auto;
+}
+
+.bubble-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-shadow: unset;
+}
+
+.bubble-link:hover {
+    text-shadow: 0 0 6px green, 0 0 12px yellow;
+    transition: all 0.3s ease;
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, red 0%, blue 80%);
+    /* background: radial-gradient(circle, var(--color-green-400) 0%, var(--color-green-400) 80%); */
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+    animation: rise 1s ease-out forwards;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateX(-10px) translateY(-20px) scale(1.2);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateX(10px) translateY(-40px) scale(0.8);
+        opacity: 0;
+    }
+>>>>>>> Stashed changes
 }

@@ -10,7 +10,17 @@ import {
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Container from "./container";
+<<<<<<< Updated upstream
 import { ShineBorder } from "@/components/magicui/shine-border";
+=======
+import Link from "next/link";
+
+const links = [
+    { href: "/our-story", label: "Our Story" },
+    { href: "/our-creations", label: "Our Creations" },
+    { href: "/summon-us", label: "Contact Us" },
+];
+>>>>>>> Stashed changes
 
 const NavMenu = () => {
     return (
