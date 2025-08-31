@@ -172,9 +172,19 @@
 }
 
 #tsparticles {
+<<<<<<< HEAD
     z-index: -2;
 }
 
+=======
+<<<<<<< Updated upstream
+  z-index: -2;
+=======
+    z-index: -2;
+}
+
+/* wand /staff */
+>>>>>>> layout
 body {
     cursor: url("/glowing-orb copy.svg") 16 16, auto;
 }
@@ -221,4 +231,8 @@ body {
         transform: translateX(10px) translateY(-40px) scale(0.8);
         opacity: 0;
     }
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> layout
 }

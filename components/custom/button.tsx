@@ -4,8 +4,8 @@ import Link from "next/link";
 type Props = {
     label?: string | React.ReactNode;
     href?: string;
-    className?: string;
     children?: React.ReactNode;
+    className?: string;
     onClick?: () => void;
     onMouseEnter?: () => void;
     onMouseLeave?: () => void;

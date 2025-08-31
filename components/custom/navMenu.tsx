@@ -16,7 +16,7 @@ import Link from "next/link";
 const links = [
     { href: "/our-story", label: "Our Story" },
     { href: "/our-creations", label: "Our Creations" },
-    { href: "/summon-us", label: "Summon Us" },
+    { href: "/contact-us", label: "Contact Us" },
 ];
 
 const NavMenu = () => {
