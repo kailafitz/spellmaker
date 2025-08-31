@@ -10,28 +10,10 @@ interface Sparkle {
 }
 
 const MagicCursor: React.FC = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
     const [sparkles, setSparkles] = useState<Sparkle[]>([]);
-
-    let sparkleId = 0;
-
-    const handleMouseMove = (e: MouseEvent) => {
-        setPosition({ x: e.clientX, y: e.clientY });
-        setSparkles((prev) => [
-            ...prev,
-            {
-                id: sparkleId++, // unique incremental ID
-                x: e.clientX + (Math.random() * 10 - 5),
-                y: e.clientY + (Math.random() * 10 - 5),
-                size: Math.random() * 2 + 1,
-                opacity: 1,
-            },
-        ]);
-    };
 
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
-            setPosition({ x: e.clientX, y: e.clientY });
 
             setSparkles((prev) => [
                 ...prev,
