@@ -9,7 +9,7 @@ const TitleText = () => {
         // 
         <>
             <Container className="text-4xl justify-center text-center text-white uppercase mb-10">
-                <h2 className="font-heading bg-gradient-to-b from-white via-white to-80% to-indigo-95 bg-clip-text text-transparent">
+                <h2 className="font-heading text-white">
                     We don&#39;t just tell stories- we cast them
                 </h2>
             </Container>

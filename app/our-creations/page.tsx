@@ -159,9 +159,10 @@ const Productions: React.FC = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-play-icon lucide-play rotate-y-180"
+                    className="lucide lucide-circle-chevron-up-icon lucide-circle-chevron-up -rotate-90 hover:cursor-pointer"
                 >
-                    <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m8 14 4-4 4 4" />
                 </svg>
             </button>
             <button
@@ -178,9 +179,10 @@ const Productions: React.FC = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-play-icon lucide-play"
+                    className="lucide lucide-circle-chevron-up-icon lucide-circle-chevron-up rotate-90 hover:cursor-pointer"
                 >
-                    <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m8 14 4-4 4 4" />
                 </svg>
             </button>
         </div>

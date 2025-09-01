@@ -6,7 +6,7 @@ import { PartilceTest } from "./particles";
 const HomeBg = () => {
     return (
         <>
-            <div className="bg-[url('/stars.png')] bg-cover w-full h-full left-0 top-0 -z-[11] fixed"></div>
+            {/* <div className="bg-[url('/stars.png')] bg-cover w-full h-full left-0 top-0 -z-[11] fixed"></div> */}
             {/* <Particles
                 className="absolute inset-0 z-0"
                 quantity={200}

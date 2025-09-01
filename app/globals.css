@@ -176,7 +176,7 @@
 }
 
 body {
-    cursor: url("/glowing-orb copy.svg") 16 16, auto;
+    cursor: url("/wand2.svg") 16 16, auto;
 }
 
 .bubble-link {
@@ -221,4 +221,8 @@ body {
         transform: translateX(10px) translateY(-40px) scale(0.8);
         opacity: 0;
     }
+}
+
+.test123 {
+    mix-blend-mode: difference;
 }

@@ -70,7 +70,7 @@ export default function FloatingDrawer() {
     return (
         <div className="fixed bottom-0 inset-x-0 flex justify-center">
             <motion.div
-                className="pointer-events-auto z-20"
+                className="pointer-events-auto z-50"
                 animate={{ y: open ? -130 : -0 }}
                 transition={{ type: "tween", stiffness: 200, damping: 20 }}
             >
@@ -87,20 +87,15 @@ export default function FloatingDrawer() {
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="lucide lucide-wand-icon lucide-wand"
+                            className={`lucide lucide-circle-chevron-up-icon lucide-circle-chevron-up ${
+                                open ? "rotate-180" : "rotate-0"
+                            }`}
                         >
-                            <path d="M15 4V2" />
-                            <path d="M15 16v-2" />
-                            <path d="M8 9h2" />
-                            <path d="M20 9h2" />
-                            <path d="M17.8 11.8 19 13" />
-                            <path d="M15 9h.01" />
-                            <path d="M17.8 6.2 19 5" />
-                            <path d="m3 21 9-9" />
-                            <path d="M12.2 6.2 11 5" />
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m8 14 4-4 4 4" />
                         </svg>
                     }
-                    className="rounded-t-full rounded-b-none shadow-xl py-4 px-10 bg-indigo-950 hover:cursor-default"
+                    className="rounded-t-full rounded-b-none shadow-xl py-4 px-10 bg-indigo-950 transition-all hover:transition-all hover:cursor-default"
                 />
             </motion.div>
 
